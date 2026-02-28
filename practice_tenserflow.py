@@ -1,15 +1,21 @@
 import tensorflow as tf
+import time
 
-v1 = tf.constant(5)
-v2 = tf.Variable(10)
+# v1 = tf.constant(5)
+# v2 = tf.Variable(10)
+#
+# print(v1)
+# print(v2)
+#
+# #checking mutability of the Variables
+#
+# v3 = tf.Variable(3)
+# print("Before", v3)
+#
+# v3.assign(4)
+# print("After", v3)
 
-print(v1)
-print(v2)
-
-#checking mutability of the Variables
-
-v3 = tf.Variable(3)
-print("Before", v3)
-
-v3.assign(4)
-print("After", v3)
+#Checking how much time is taken by tensorflow for this single variable
+start = time.time()
+a = tf.constant(5)
+end = time.time()
