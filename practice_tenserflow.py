@@ -50,3 +50,5 @@ t2 = tf.constant([[7,6,8],[1,5,7]])
 
 two_ts_add = tf.add(t1,t2)
 print("Two TS Add:", two_ts_add)
+
+print("Shape of t1",t1.shape)
