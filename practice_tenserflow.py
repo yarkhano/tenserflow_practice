@@ -25,5 +25,21 @@ print("GPUs available:", gpus)
 
 
 #started arithmatic operations in tenserflow
-addition  = tf.add(2,3)
-print(addition)
+
+a = tf.constant(5)
+b = tf.constant(3)
+
+c = tf.add(a, b)
+print("Addition:", c)
+
+
+d = tf.subtract(a, b)
+print("Subtraction:", d)
+
+
+e = tf.multiply(a, b)
+print("Multiplication:", e)
+
+
+f = tf.divide(a, b)
+print("Division:", f)
