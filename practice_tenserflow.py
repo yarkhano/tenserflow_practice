@@ -1,6 +1,10 @@
 import tensorflow as tf
 import time
 
+#looking for availabel gpus
+gpus = tf.config.list_physical_devices('GPU')
+print("GPUs available:", gpus)
+
 # v1 = tf.constant(5)
 # v2 = tf.Variable(10)
 #
