@@ -12,14 +12,18 @@ print("GPUs available:", gpus)
 # print(v2)
 #
 # #checking mutability of the Variables
-#
-# v3 = tf.Variable(3)
+#v3 = tf.Variable(3)
 # print("Before", v3)
 #
 # v3.assign(4)
 # print("After", v3)
 
 #Checking how much time is taken by tensorflow for this single variable
-start = time.time()
-a = tf.constant(5)
-end = time.time()
+# start = time.time()
+# a = tf.constant(5)
+# end = time.time()
+
+
+#started arithmatic operations in tenserflow
+addition  = tf.add(2,3)
+print(addition)
