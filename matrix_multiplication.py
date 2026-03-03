@@ -9,4 +9,10 @@ print(m3)
 
 
 #Mini Practice Challenge
+X = tf.constant([[2, 3]])
+W = tf.constant([[1],
+                 [4]])
+b = tf.constant([5])
 
+result = tf.matmul(X, W) + b
+print(result)
